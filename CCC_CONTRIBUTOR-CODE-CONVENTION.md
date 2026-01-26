@@ -1,40 +1,48 @@
-# 📐 Contributor Code Convention (CCC.bot)
-## ♾️ WeOwnNet 🌐 — Ecosystem Official Documentation
+# Contributor Code Convention (CCC) Standard
 
-**Version:** 2.4.0  
-**Established:** 2026-W02  
-**Last Updated:** 2026-01-09 (GTM_2026-W02_017)  
-**Repository:** [github.com/WeOwnNet/CCC](https://github.com/WeOwnNet/CCC)  
-**Domain:** [ccc.bot](https://ccc.bot) *(coming soon)*
+## ♾️ WeOwnNet 🌐 — Official Documentation
+
+| Field | Value |
+|-------|-------|
+| Version | 2.4.1 |
+| Established | 2026-W02 |
+| Updated | 2026-01-26 (W05) |
+| Repository | https://github.com/WeOwnNet/CCC |
+| Domain | https://ccc.bot *(coming soon)* |
+| Status | 🔒 LOCKED |
 
 ---
 
 ## 📖 Table of Contents
 
 1. [Overview](#-overview)
-2. [Governance & Adoption](#-governance--adoption)
-3. [Entry ID Format Specification](#-entry-id-format-specification)
-4. [Registered Contributor Codes](#-registered-contributor-codes)
-5. [Timestamp Format Standards](#-timestamp-format-standards)
-6. [Priority Matrix](#-priority-matrix)
-7. [Status Icons](#-status-icons)
-8. [Category Emojis](#-category-emojis)
-9. [Entry Template](#-entry-template)
-10. [Quick Reference Card](#-quick-reference-card)
-11. [Contribution Workflow](#-contribution-workflow)
-12. [Version History](#-version-history)
-13. [Adoption Signatures](#-adoption-signatures)
+2. [CCC Format Specification](#-ccc-format-specification)
+3. [CCC-ID Format Specification](#-ccc-id-format-specification)
+4. [CCC-ID Rules](#-ccc-id-rules)
+5. [Registered Contributor Codes](#-registered-contributor-codes)
+6. [Agent Identity Format](#-agent-identity-format)
+7. [Timestamp Format Standards](#-timestamp-format-standards)
+8. [Priority Matrix](#-priority-matrix)
+9. [Status Icons](#-status-icons)
+10. [Category Emojis](#-category-emojis)
+11. [Entry Template](#-entry-template)
+12. [Quick Reference Card](#-quick-reference-card)
+13. [Version History](#-version-history)
 
 ---
 
 ## 📖 Overview
 
-The **Contributor Code Convention (CCC)** is the official standard for tracking, organizing, and attributing contributions across the ♾️ WeOwnNet 🌐 ecosystem. This convention ensures:
+The **Contributor Code Convention (CCC)** is the official standard for tracking, organizing, and attributing contributions across the ♾️ WeOwnNet 🌐 ecosystem.
 
-- **Consistent Attribution** — Every contribution is properly credited
-- **Traceability** — All entries can be traced back to their source
-- **Collaboration** — Team members can easily reference and build upon each other's work
-- **Automation-Ready** — Structured format enables tooling and automation
+### Purpose
+
+| Goal | Description |
+|------|-------------|
+| **Consistent Attribution** | Every contribution is properly credited |
+| **Traceability** | All entries can be traced back to their source |
+| **Collaboration** | Team members can easily reference and build upon each other's work |
+| **Automation-Ready** | Structured format enables tooling and automation |
 
 ### Design Principles
 
@@ -46,90 +54,42 @@ The **Contributor Code Convention (CCC)** is the official standard for tracking,
 | **Uniquely Identifiable** | No two entries share the same ID |
 | **Context-Rich** | Each entry carries meaningful metadata |
 
-### AI Collaboration
+---
 
-CCC entries may be created in collaboration with AI assistants. The primary AI collaboration environment for ♾️ WeOwnNet 🌐 is:
+## 📐 CCC Format Specification
 
-| Resource | Value |
-|----------|-------|
-| **AI Instance** | [AI.WeOwn.Agency](https://AI.WeOwn.Agency) |
-| **AI Username** | AI:team-lfg |
-| **Platform** | AnythingLLM |
+### Format
 
-### Onchain Cooperative
+```
+[A-Z0-9]{3}
+```
 
-The CCC standard will be governed by an onchain cooperative at [ccc.bot](https://ccc.bot).
+A **3-character alphanumeric code** that uniquely identifies contributors.
 
-| Resource | Value |
-|----------|-------|
-| **Domain** | [ccc.bot](https://ccc.bot) |
-| **Registrar** | Porkbun.com (Web3FreedomClub) |
-| **Purpose** | Onchain cooperative for CCC governance |
-| **Status** | 🔄 In Development |
+### Rules
+
+| Rule | Description |
+|------|-------------|
+| Length | Exactly 3 characters |
+| Characters | A-Z uppercase and 0-9 only |
+| Uniqueness | Each CCC must be unique across the organization |
+| Permanence | Once assigned, a CCC is never reassigned to another contributor |
+
+### Examples
+
+| CCC | Contributor |
+|-----|-------------|
+| GTM | yonks (Jason Younker) |
+| THY | mrsyonks (Tyler Younker) |
+| RMN | Roman Di Domizio |
+| IAL | IAmLotus |
+| LFG | CoachLFG (Mike LeMaire) |
+| LDC | Dhruv |
+| SHD | Shahid |
 
 ---
 
-## 🏛️ Governance & Adoption
-
-### Formal Adoption Process
-
-The CCC standard will be formally adopted through on-chain governance to ensure transparent, community-driven decision making.
-
-#### Governance Proposal
-
-| Field | Value |
-|-------|-------|
-| **Platform** | [snapshot.box](https://snapshot.box) |
-| **Proposer** | yonks (GTM) |
-| **Proposal** | CCC v2.4.0 Adoption |
-| **Status** | 📋 Pending |
-
-#### Voting Eligibility
-
-| Team | Participation |
-|------|---------------|
-| ♾️ WeOwnNet 🌐 Core TEAM | ✅ Eligible |
-| ♾️ WeOwn.Dev 💻 TEAM | ✅ Eligible |
-
-### AMA / Q&A Event
-
-An **Ask Me Anything (AMA)** session will be hosted to discuss the CCC standard, answer questions, and gather feedback before the governance vote.
-
-| Field | Value |
-|-------|-------|
-| **Event** | CCC v2.4.0 AMA / Q&A |
-| **Hosts** | yonks (GTM) + CoachLFG (LFG) |
-| **Audience** | ♾️ WeOwnNet 🌐 Community |
-| **Purpose** | Discuss CCC, answer questions, gather feedback |
-| **Status** | 📋 Scheduled (TBD) |
-
-#### AMA Agenda (Proposed)
-
-| # | Topic | Duration |
-|---|-------|----------|
-| 1 | Introduction to CCC | 10 min |
-| 2 | Entry ID Format Walkthrough | 10 min |
-| 3 | Contributor Codes & Attribution | 10 min |
-| 4 | Standards Overview (timestamps, priorities, statuses) | 10 min |
-| 5 | Live Q&A | 20 min |
-| 6 | Next Steps & Governance Vote | 10 min |
-
-### Adoption Timeline
-
-| Phase | Activity | Status |
-|-------|----------|--------|
-| 1 | CCC v2.4.0 Published to GitHub | ✅ Complete |
-| 2 | ccc.bot Domain Registered | ✅ Complete |
-| 3 | Share with Core TEAM (Signal) | 📋 Pending |
-| 4 | AMA / Q&A Event | 📋 Scheduled |
-| 5 | Governance Proposal on snapshot.box | 📋 Pending |
-| 6 | Voting Period | ⬜ TBD |
-| 7 | Formal Adoption (if approved) | ⬜ TBD |
-| 8 | ccc.bot Cooperative Launch | ⬜ TBD |
-
----
-
-## 🆔 Entry ID Format Specification
+## 🆔 CCC-ID Format Specification
 
 ### Format Structure
 
@@ -141,22 +101,22 @@ An **Ask Me Anything (AMA)** session will be hosted to discuss the CCC standard,
 
 | Component | Description | Format | Example |
 |-----------|-------------|--------|---------|
-| `<CCC>` | Contributor Code Convention identifier | 3 uppercase letters | `GTM` |
+| `<CCC>` | Contributor Code | 3 alphanumeric | `GTM` |
 | `_` | Primary delimiter | Underscore | `_` |
 | `<YYYY>` | 4-digit year | ISO 8601 | `2026` |
 | `-` | Date separator | Hyphen | `-` |
 | `W` | Week indicator | Literal "W" | `W` |
-| `<WW>` | ISO week number | 01-53, zero-padded | `02` |
+| `<WW>` | ISO week number | 01-53, zero-padded | `05` |
 | `_` | Secondary delimiter | Underscore | `_` |
-| `<NNN>` | Sequential number | 001-999, zero-padded | `017` |
+| `<NNN>` | Sequential number | 001-999, zero-padded | `021` |
 
 ### Complete Example
 
 ```
-GTM_2026-W02_017
+GTM_2026-W05_021
 │   │    │   │
-│   │    │   └── Sequential entry #017
-│   │    └────── ISO Week 02
+│   │    │   └── Sequential entry #021
+│   │    └────── ISO Week 05
 │   └─────────── Year 2026
 └─────────────── Contributor: yonks (GTM)
 ```
@@ -166,7 +126,7 @@ GTM_2026-W02_017
 | Rule | Requirement |
 |------|-------------|
 | CCC Length | Exactly 3 characters |
-| CCC Characters | A-Z uppercase only |
+| CCC Characters | A-Z uppercase and 0-9 only |
 | Year Range | 2024-2099 (current era) |
 | Week Range | 01-53 (ISO 8601 compliant) |
 | Sequence Range | 001-999 per contributor per week |
@@ -175,8 +135,46 @@ GTM_2026-W02_017
 ### RegEx Pattern
 
 ```regex
-^[A-Z]{3}_[0-9]{4}-W(0[1-9]|[1-4][0-9]|5[0-3])_[0-9]{3}$
+^[A-Z0-9]{3}_[0-9]{4}-W(0[1-9]|[1-4][0-9]|5[0-3])_[0-9]{3}$
 ```
+
+---
+
+## 📋 CCC-ID Rules
+
+### R-168: CCC-ID Ownership
+
+| ID | Rule |
+|----|------|
+| R-168 | CCC-ID sequence tied to CCC (contributor), NOT username/session |
+
+**Meaning:** Your CCC-ID sequence follows YOU across all workspaces and sessions. If you're GTM, your sequence continues whether you're in CCC, MAIT, or ADMIN workspace.
+
+### R-169: ISO Week Reset
+
+| ID | Rule |
+|----|------|
+| R-169 | CCC-ID resets to _001 ONLY at ISO week boundary |
+
+**Meaning:** Each Monday (ISO week start), sequence resets to 001.
+
+| Week | First CCC-ID | Last CCC-ID |
+|------|--------------|-------------|
+| W04 | GTM_2026-W04_001 | GTM_2026-W04_339 |
+| W05 | GTM_2026-W05_001 | GTM_2026-W05_??? |
+
+### R-181: Weekly Summary Reservation
+
+| ID | Rule |
+|----|------|
+| R-181 | CCC-ID _001 of each ISO week is RESERVED for weekly summary |
+
+**Meaning:** `<CCC>_<YYYY>-W<WW>_001` is always the weekly summary entry.
+
+| Week | Reserved CCC-ID | Purpose |
+|------|-----------------|---------|
+| W05 | GTM_2026-W05_001 | Weekly summary |
+| W06 | GTM_2026-W06_001 | Weekly summary |
 
 ---
 
@@ -184,17 +182,24 @@ GTM_2026-W02_017
 
 ### 🏛️ Founding OG ♾️ WeOwn.Agency Owners
 
-**Established:** 2026-W02 (GTM_2026-W02_015)
+**Established:** 2026-W02
 
 > *"Forever OG"* 🫡
 
 | CCC | Contributor | Handle | Role | Status |
 |-----|-------------|--------|------|--------|
-| `GTM` | yonks | yonks.box｜🤖🏛️🪙｜Jason Younker ♾️ | Host / Founder | 🏛️ Founding OG |
+| `GTM` | yonks | yonks.box｜🤖🏛️🪙｜Jason Younker ♾️ | Co-Founder / Chief Digital Alchemist | 🏛️ Founding OG |
 | `THY` | mrsyonks | Tyler Younker (mrsyonks) | Co-Founder | 🏛️ Founding OG |
-| `ILO` | IamLotus | IamLotus.eth | Co-Founder | 🏛️ Founding OG |
+| `IAL` | IAmLotus | IAmLotus.eth | Co-Founder | 🏛️ Founding OG |
 | `RMN` | Roman | Roman Di Domizio (@LLMfeed) | AI Platform Engineer | 🏛️ Founding OG |
 | `LFG` | CoachLFG | Mike LeMaire (Coach) | Co-Host / Coach | 🏛️ Founding OG |
+
+### Contributors (2026-W02+)
+
+| CCC | Contributor | Role | Status |
+|-----|-------------|------|--------|
+| `LDC` | Dhruv | Contributor | ✅ Registered |
+| `SHD` | Shahid | Contributor | ✅ Registered |
 
 ### System Codes
 
@@ -204,20 +209,38 @@ GTM_2026-W02_017
 | `SYS` | System | Automated or system-generated entries |
 | `TMP` | Temporary | Draft or temporary entries pending assignment |
 
-### Code Assignment Rules
-
-1. **Uniqueness** — Each CCC must be unique across the organization
-2. **Permanence** — Once assigned, a CCC is never reassigned to another contributor
-3. **Individual Attribution** — Each CCC represents an individual contributor
-4. **AI Collaboration** — Entries created with AI assistance are still attributed to the human contributor's CCC
-
 ### Requesting a New CCC
 
-New contributor codes are assigned by:
-1. Request via Core TEAM channel (Signal: ♾️ WeOwn.Agency 👥)
+1. Request via Core TEAM channel
 2. Approval by existing Founding OG member
 3. Registration in this document
 4. Announcement in community channels
+
+---
+
+## 🤖 Agent Identity Format
+
+### R-171: Agent Identity Format
+
+| ID | Rule |
+|----|------|
+| R-171 | Agent identity format: CCC=`AI:@<CCC>`, MAIT=`MAIT:@<CCC>`, ADMIN=`ADMIN:@<CCC>` |
+
+### Identity Matrix
+
+| Workspace | Metaphor | Agent Identity | Username Format |
+|-----------|----------|----------------|-----------------|
+| CCC | 🤝 THE HANDS | `AI:@<CCC>` | `u-<ccc>_user` |
+| MAIT | 🧠 THE BRAIN | `MAIT:@<CCC>` | `m-<ccc>_mait` |
+| ADMIN | ⚙️ THE ENGINE | `ADMIN:@<CCC>` | `a-<ccc>_dev` |
+
+### Examples
+
+| Workspace | @GTM Identity | @SHD Identity |
+|-----------|---------------|---------------|
+| CCC | AI:@GTM | AI:@SHD |
+| MAIT | MAIT:@GTM | MAIT:@SHD |
+| ADMIN | ADMIN:@GTM | ADMIN:@SHD |
 
 ---
 
@@ -227,8 +250,8 @@ New contributor codes are assigned by:
 
 | Scenario | Pattern | Example |
 |----------|---------|---------|
-| Time known | `Dd HH:MM TZ` | `Th 14:30 EST` |
-| Time unknown | `Fullday` | `Thursday` |
+| Time known | `Dd HH:MM TZ` | `Mo 07:16 EST` |
+| Time unknown | `Fullday` | `Monday` |
 
 ### Day Abbreviations
 
@@ -256,14 +279,14 @@ New contributor codes are assigned by:
 | `PDT` | Pacific Daylight Time | UTC-7 |
 | `UTC` | Coordinated Universal Time | UTC±0 |
 
-### Examples
+### ISO Week Reference
 
-```
-Th 14:30 EST    → Thursday at 2:30 PM Eastern Standard Time
-Mo 09:00 UTC    → Monday at 9:00 AM UTC
-Friday          → Friday (time not specified)
-We 23:45 PST    → Wednesday at 11:45 PM Pacific Standard Time
-```
+| Field | Description |
+|-------|-------------|
+| Standard | ISO 8601 |
+| Week Start | Monday |
+| Week End | Sunday |
+| W05 2026 | 2026-01-26 → 2026-02-01 |
 
 ---
 
@@ -315,150 +338,90 @@ We 23:45 PST    → Wednesday at 11:45 PM Pacific Standard Time
 | 👀 | Review | Awaiting review/approval |
 | 🔙 | Reverted | Rolled back |
 | ❌ | Cancelled | Will not be completed |
-| 💤 | On Hold | Paused intentionally |
-| 🔁 | Recurring | Repeating task |
-
-### Status Transitions
-
-```
-📋 Pending → 🔄 In Progress → 👀 Review → ✅ Complete → 🚀 Launched
-                    ↓
-                  ⏳ Blocked
-                    ↓
-              (resolve blocker)
-                    ↓
-              🔄 In Progress
-```
+| 🔒 | Locked | Finalized, no changes |
 
 ---
 
 ## 🏷️ Category Emojis
 
-### Core Categories
-
-| Emoji | Category | Use Case |
-|-------|----------|----------|
-| 🔧 | Tools Decision | Tool selection, integration decisions |
-| 🚨 | Error Resolution | Bug fixes, incident response |
-| 📖 | Documentation | Docs, guides, READMEs |
-| 🏗️ | Architecture | System design, infrastructure |
-| 🎪 | Event Planning | Meetings, launches, community events |
-| 📐 | Standards | Conventions, processes, guidelines |
-
-### Development Categories
-
-| Emoji | Category | Use Case |
-|-------|----------|----------|
-| 🐛 | Bug Fix | Bug identification and resolution |
-| ✨ | Enhancement | Feature improvements |
-| ♻️ | Refactor | Code restructuring |
-| 🧪 | Testing | Test creation, QA activities |
-| 🔐 | Security | Security-related work |
-| ⚡ | Performance | Optimization work |
-
-### Operations Categories
-
-| Emoji | Category | Use Case |
-|-------|----------|----------|
-| ⚙️ | Operations | DevOps, maintenance |
-| 🔍 | Health Check | Monitoring, audits |
-| 📦 | Product | Product management |
-| 🚀 | Launch | Deployments, releases |
-| 💰 | Finance | Budget, payments, revenue |
-
-### Creative & Growth Categories
-
-| Emoji | Category | Use Case |
-|-------|----------|----------|
-| 🎨 | Creative | Design, branding, content |
-| 💡 | Ideation | Brainstorming, proposals |
-| 📣 | Marketing | Campaigns, outreach |
-| 🎓 | Learning | Training, education |
-| 📊 | Analytics | Data analysis, metrics |
-
-### Collaboration Categories
-
-| Emoji | Category | Use Case |
-|-------|----------|----------|
-| 🤝 | Collaboration | Team activities, partnerships |
-| 🏛️ | Milestone | Major achievements, milestones |
+| Emoji | Category | Description |
+|-------|----------|-------------|
+| 📐 | Standards | CCC, protocols, conventions |
+| 🤝 | Collaboration | Team coordination, meetings |
+| 💻 | Development | Code, technical work |
+| 📄 | Documentation | Docs, guides, specs |
+| 🎯 | Strategy | Planning, roadmap |
+| 🐛 | Bug | Issue, defect |
+| ✨ | Feature | New capability |
+| 🔧 | Maintenance | Updates, fixes |
+| 🧠 | Learning | Training, research |
 
 ---
 
 ## 📝 Entry Template
 
-### Standard Entry Format
-
 ```markdown
-> **<CCC>_<YYYY>-W<WW>_<NNN>** | <EMOJI> <Category>: <Title>
->
-> | Field | Value |
-> |-------|-------|
-> | **Timestamp** | <Dd HH:MM TZ or Fullday> |
-> | **Status** | <STATUS_ICON> <STATUS_TEXT> |
-> | **Category** | <EMOJI> <Category> |
-> | **Priority** | <PRIORITY_EMOJI> <PRIORITY_LABEL> |
->
-> ### Description
-> <Brief description of the entry>
->
-> ### Details
-> <Extended details, context, or notes>
->
-> ### Related Entries
-> - <ENTRY_ID>: <Description>
-```
+# <CCC>_<YYYY>-W<WW>_<NNN>
 
-### Minimal Entry Format
+## ♾️ WeOwnNet 🌐
 
-```markdown
-> **<CCC>_<YYYY>-W<WW>_<NNN>** | <EMOJI> <Category>: <Title>
-> **Status:** <STATUS_ICON> <STATUS_TEXT> | **Timestamp:** <Dd HH:MM TZ>
-```
+| Field | Value |
+|-------|-------|
+| Entry ID | <CCC>_<YYYY>-W<WW>_<NNN> |
+| Timestamp | <Dd HH:MM TZ> |
+| Category | <emoji> <Category> |
+| Priority | <emoji> P<N> |
+| Status | <emoji> <Status> |
 
-### Example Entry
+---
 
-```markdown
-> **GTM_2026-W02_017** | 🤝 Collaboration: Core TEAM CCC Adoption
->
-> | Field | Value |
-> |-------|-------|
-> | **Timestamp** | Th 14:30 EST |
-> | **Status** | 🔄 In Progress |
-> | **Category** | 🤝 Collaboration |
-> | **Priority** | 🟠 P1 - High |
->
-> ### Description
-> Collaborate with Core TEAM to review, refine, and formally adopt the CCC standard.
->
-> ### Details
-> - Created comprehensive CCC documentation
-> - AI collaboration via AI:team-lfg at AI.WeOwn.Agency
-> - Governance proposal on snapshot.box
-> - AMA hosted by yonks + CoachLFG
-> - ccc.bot domain registered for onchain cooperative
->
-> ### Related Entries
-> - GTM_2026-W02_010: CCC system established
-> - GTM_2026-W02_015: Founding OG Owners Established
+## 📋 Summary
+
+<Brief description>
+
+---
+
+## 📋 Details
+
+<Detailed content>
+
+---
+
+## 🎯 Quick Commands
+
+| # | Option |
+|---|--------|
+| 1 | <option> |
+| 2 | <option> |
+
+---
+
+#FlowsBros #FedArch
+
+♾️ WeOwnNet 🌐
 ```
 
 ---
 
 ## 📇 Quick Reference Card
 
-### Entry ID Format
+### CCC-ID Format
 ```
 <CCC>_<YYYY>-W<WW>_<NNN>
-Example: GTM_2026-W02_017
+Example: GTM_2026-W05_021
 ```
 
 ### Founding OG CCCs
-| `GTM` | `THY` | `ILO` | `RMN` | `LFG` |
+| `GTM` | `THY` | `IAL` | `RMN` | `LFG` |
 |-------|-------|-------|-------|-------|
-| yonks | mrsyonks | IamLotus | Roman | Coach |
+| yonks | mrsyonks | IAmLotus | Roman | Coach |
 
-### Day Codes
+### Contributor CCCs
+| `LDC` | `SHD` |
+|-------|-------|
+| Dhruv | Shahid |
+
+### Day Codes (Week starts Monday)
 | Mo | Tu | We | Th | Fr | Sa | Su |
 |----|----|----|----|----|----|----|
 
@@ -471,113 +434,22 @@ Example: GTM_2026-W02_017
 | ✅ Done | 🔄 Progress | 📋 Pending | ⏳ Blocked | ⬜ TBD |
 |---------|-------------|------------|------------|--------|
 
-### Common Categories
-| 🔧 Tools | 🚨 Error | 📖 Docs | 🏗️ Arch | 📐 Standards |
-|----------|----------|---------|---------|--------------|
-| 🐛 Bug | ✨ Feature | 🤝 Collab | 🚀 Launch | 🏛️ Milestone |
+### Agent Identity
+| CCC | MAIT | ADMIN |
+|-----|------|-------|
+| AI:@<CCC> | MAIT:@<CCC> | ADMIN:@<CCC> |
 
 ---
 
-## 🔄 Contribution Workflow
+## 📋 Version History
 
-### Step 1: Create Entry ID
-
-1. Identify your CCC (e.g., `GTM`, `THY`, `ILO`)
-2. Note current ISO week (e.g., `2026-W02`)
-3. Get next sequential number for your CCC this week
-4. Assemble: `GTM_2026-W02_017`
-
-### Step 2: Select Metadata
-
-1. Choose appropriate **Category** emoji
-2. Set **Priority** level
-3. Initialize **Status** (usually `📋 Pending` or `🔄 In Progress`)
-4. Add **Timestamp**
-
-### Step 3: Document Entry
-
-1. Use the Entry Template
-2. Write clear **Title** and **Description**
-3. Link **Related Entries** if applicable
-4. Add relevant details
-
-### Step 4: Track Progress
-
-1. Update **Status** as work progresses
-2. Add notes for significant updates
-3. Mark ✅ **Complete** when finished
-4. Archive or reference as needed
-
-### AI-Assisted Contributions
-
-When creating entries with AI assistance:
-1. Use your personal CCC (not a system code)
-2. Reference the AI collaboration in the entry details
-3. Include thread link when applicable
-
-Example:
-```markdown
-### Details
-- AI collaboration via AI:team-lfg at AI.WeOwn.Agency
-- Thread: https://ai.weown.agency/workspace/tools/t/[thread-id]
-```
+| Version | Date | Changes |
+|---------|------|---------|
+| 2.4.0 | 2026-W02 | Initial release |
+| 2.4.1 | 2026-W05 | +R-168 (CCC-ID ownership), +R-169 (ISO week reset), +R-171 (Agent identity format), +R-181 (Weekly summary reservation), +@SHD (Shahid) registered, @GTM role updated to Co-Founder / Chief Digital Alchemist |
 
 ---
 
-## 📜 Version History
+#FlowsBros #FedArch #CCC
 
-| Version | Date | Entry ID | Changes |
-|---------|------|----------|---------|
-| 2.4.0 | 2026-01-09 | GTM_2026-W02_017 | Initial public release; Governance & AMA process; ccc.bot domain; ♾️ WeOwnNet 🌐 branding |
-
----
-
-## ✍️ Adoption Signatures
-
-### Governance Vote
-
-| Field | Value |
-|-------|-------|
-| **Platform** | [snapshot.box](https://snapshot.box) |
-| **Proposal** | CCC v2.4.0 Adoption |
-| **Proposer** | yonks (GTM) |
-| **Voters** | ♾️ WeOwnNet 🌐 Core TEAM + ♾️ WeOwn.Dev 💻 TEAM |
-| **Status** | 📋 Pending |
-
-### Core TEAM Sign-Off
-
-| CCC | Name | Vote | Date |
-|-----|------|------|------|
-| `GTM` | yonks | ⬜ | |
-| `THY` | mrsyonks | ⬜ | |
-| `ILO` | IamLotus | ⬜ | |
-| `RMN` | Roman | ⬜ | |
-| `LFG` | CoachLFG | ⬜ | |
-
----
-
-## 🔗 Links
-
-| Resource | URL |
-|----------|-----|
-| **♾️ WeOwnNet 🌐** | [weown.net](https://weown.net) |
-| **CCC Cooperative** | [ccc.bot](https://ccc.bot) *(coming soon)* |
-| **AI Instance** | [AI.WeOwn.Agency](https://AI.WeOwn.Agency) |
-| **GitHub Org** | [github.com/WeOwnNet](https://github.com/WeOwnNet) |
-| **CCC Repository** | [github.com/WeOwnNet/CCC](https://github.com/WeOwnNet/CCC) |
-| **Governance** | [snapshot.box](https://snapshot.box) |
-
----
-
-<div align="center">
-
-**Document ID:** `CCC_CONTRIBUTOR-CODE-CONVENTION.md`  
-**Maintained By:** Core TEAM  
-**Repository:** [github.com/WeOwnNet/CCC](https://github.com/WeOwnNet/CCC)  
-**Cooperative:** [ccc.bot](https://ccc.bot)
-
----
-
-*♾️ WeOwnNet 🌐 | 🏡 Real Estate and 🤝 cooperative ownership for everyone. An 🤗 inclusive community, by 👥 invitation only.*
-
----
+♾️ WeOwnNet 🌐 | 🏡 Real Estate and 🤝 cooperative ownership for everyone. An 🤗 inclusive community, by 👥 invitation only.
