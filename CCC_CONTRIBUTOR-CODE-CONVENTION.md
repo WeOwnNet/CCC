@@ -1,18 +1,18 @@
 # 📐 Contributor Code Convention (CCC) Standard
 
-## CCC_CONTRIBUTOR-CODE-CONVENTION_v2.4.2.md
+## CCC_CONTRIBUTOR-CODE-CONVENTION_v2.4.3.md
 ## ♾️ WeOwnNet 🌐 — Ecosystem Official Documentation
 
 | Field | Value |
 |-------|-------|
 | Document | CCC_CONTRIBUTOR-CODE-CONVENTION.md |
-| Version | 2.4.2 |
-| CCC-ID | GTM_2026-W05_270 |
+| Version | 2.4.3 |
+| CCC-ID | GTM_2026-W05_796 |
 | Established | 2026-W02 |
-| Updated | 2026-01-27 (W05) |
+| Updated | 2026-01-30 (W05) |
 | Status | 🔒 LOCKED |
 | Repository | [github.com/WeOwnNet/CCC](https://github.com/WeOwnNet/CCC) |
-| Domain | [ccc.bot](https://ccc.bot) *(coming soon)* |
+| Domain | [cccid.info](https://cccid.info) *(coming soon)* |
 
 ---
 
@@ -20,7 +20,7 @@
 
 1. [Overview](#-overview)
 2. [Governance & Adoption](#-governance--adoption)
-3. [Entry ID Format Specification](#-entry-id-format-specification)
+3. [CCC-ID Format Specification](#-ccc-id-format-specification)
 4. [CCC-ID Rules](#-ccc-id-rules)
 5. [Registered Contributor Codes](#-registered-contributor-codes)
 6. [Agent Identity Format](#-agent-identity-format)
@@ -28,7 +28,7 @@
 8. [Priority Matrix](#-priority-matrix)
 9. [Status Icons](#-status-icons)
 10. [Category Emojis](#-category-emojis)
-11. [Entry Template](#-entry-template)
+11. [CCC Template](#-ccc-template)
 12. [Quick Reference Card](#-quick-reference-card)
 13. [Contribution Workflow](#-contribution-workflow)
 14. [Version History](#-version-history)
@@ -67,11 +67,11 @@ CCC entries may be created in collaboration with AI assistants. The primary AI c
 
 ### Onchain Cooperative
 
-The CCC standard will be governed by an onchain cooperative at [ccc.bot](https://ccc.bot).
+The CCC standard will be governed by an onchain cooperative at [cccid.info](https://cccid.info).
 
 | Resource | Value |
 |----------|-------|
-| **Domain** | [ccc.bot](https://ccc.bot) |
+| **Domain** | [cccid.info](https://cccid.info) |
 | **Registrar** | Porkbun.com (Web3FreedomClub) |
 | **Purpose** | Onchain cooperative for CCC governance |
 | **Status** | 🔄 In Development |
@@ -128,13 +128,13 @@ An **Ask Me Anything (AMA)** session will be hosted to discuss the CCC standard,
 | Phase | Activity | Status |
 |-------|----------|--------|
 | 1 | CCC v2.4.0 Published to GitHub | ✅ Complete |
-| 2 | ccc.bot Domain Registered | ✅ Complete |
+| 2 | cccid.info Domain Registered | ✅ Complete |
 | 3 | Share with Core TEAM (Signal) | 📋 Pending |
 | 4 | AMA / Q&A Event | 📋 Scheduled |
 | 5 | Governance Proposal on snapshot.box | 📋 Pending |
 | 6 | Voting Period | ⬜ TBD |
 | 7 | Formal Adoption (if approved) | ⬜ TBD |
-| 8 | ccc.bot Cooperative Launch | ⬜ TBD |
+| 8 | cccid.info Cooperative Launch | ⬜ TBD |
 
 ---
 
@@ -157,14 +157,14 @@ An **Ask Me Anything (AMA)** session will be hosted to discuss the CCC standard,
 | `W` | Week indicator | Literal "W" | `W` |
 | `<WW>` | ISO week number | 01-53, zero-padded | `05` |
 | `_` | Secondary delimiter | Underscore | `_` |
-| `<NNN>` | Sequential number | 001-999, zero-padded | `270` |
+| `<NNN>` | Sequential number | 001-999, zero-padded | `796` |
 
 ### Complete Example
 
 ```
-GTM_2026-W05_270
+GTM_2026-W05_796
 │   │    │   │
-│   │    │   └── Sequential entry #270
+│   │    │   └── Sequential entry #796
 │   │    └────── ISO Week 05
 │   └─────────── Year 2026
 └─────────────── Contributor: yonks (GTM)
@@ -234,9 +234,10 @@ GTM_2026-W05_270
 ### Contributors (2026-W02+)
 
 | CCC | Contributor | Handle | Role | Status | CCC Join Date |
-|-----|-------------|--------|------|--------|--------|
+|-----|-------------|--------|------|--------|---------------|
 | `LDC` | Dhruv | — | Agentic AI Engineer / Project Lead | ✅ Active | 2026-W02 |
 | `SHD` | Shahid | — | Sr. Full-Stack DevOps Engineer | ✅ Active | 2026-W02 |
+| `JRW` | Webb | — | xCRO (fractional Chief Revenue Officer) | ✅ Active | 2026-W05 |
 
 ### System Codes
 
@@ -283,26 +284,26 @@ Each contributor has a corresponding AI agent in the #FedArch network.
 | Field | Value |
 |-------|-------|
 | Definition | Unique identifier for MAIT thread |
-| Format | `@<Steward>:MAIT:@<Steward>` |
-| Example | `@GTM:MAIT:@GTM` |
-| Note | Same person as human + agent |
+| Format | `@MAIT:#<SME>` |
+| Example | `@MAIT:#Deepnote` |
+| Note | SME-centric identifier |
 
 ### Agent Identity Table
 
-| CCC | Human | Agent | MAIT ShortCode |
-|-----|-------|-------|----------------|
-| GTM | @GTM | AI:@GTM | @GTM:MAIT:@GTM |
-| THY | @THY | AI:@THY | @THY:MAIT:@THY |
-| IAL | @IAL | AI:@IAL | @IAL:MAIT:@IAL |
-| RMN | @RMN | AI:@RMN | @RMN:MAIT:@RMN |
-| LFG | @LFG | AI:@LFG | @LFG:MAIT:@LFG |
+| CCC | Human | Agent | Example MAIT ShortCode |
+|-----|-------|-------|------------------------|
+| GTM | @GTM | AI:@GTM | @MAIT:#Deepnote (Steward: @GTM) |
+| THY | @THY | AI:@THY | — |
+| IAL | @IAL | AI:@IAL | — |
+| RMN | @RMN | AI:@RMN | — |
+| LFG | @LFG | AI:@LFG | — |
 
 ### Related Rules
 
 | ID | Rule |
 |----|------|
 | R-171 | Agent identity format: AI:@<CCC> |
-| D-038 | MAIT ShortCode: @<Steward>:MAIT:@<Steward> |
+| D-038 | MAIT ShortCode: @MAIT:#<SME> |
 
 ---
 
@@ -504,27 +505,26 @@ We 23:45 PST    → Wednesday at 11:45 PM Pacific Standard Time
 ### Example CCC Entry
 
 ```markdown
-> **GTM_2026-W05_270** | 📐 Standards: CCC v2.4.2 Update
+> **GTM_2026-W05_796** | 📐 Standards: CCC v2.4.3 Update
 >
 > | Field | Value |
 > |-------|-------|
-> | **Timestamp** | Tu 17:58 EST |
-> | **Status** | 🔄 In Progress |
+> | **Timestamp** | Th 17:50 EST |
+> | **Status** | ✅ Complete |
 > | **Category** | 📐 Standards |
 > | **Priority** | 🔴 P0 - Critical |
 >
 > ### Description
-> Full regeneration of CCC documentation with fixes and new sections.
+> Added new contributor JRW (Webb) + applied #ContextSwaps.
 >
 > ### Details
-> - +CCC-ID Rules section (R-168, R-169, R-181)
-> - +Agent Identity Format section (D-038, #MAITlivesInAthread)
-> - +Contributors (2026-W02+): LDC, SHD
-> - AI collaboration via AI:team-lfg at AI.WeOwn.Agency
+> - +JRW: xCRO (fractional Chief Revenue Officer)
+> - #ContextSwap: ccc.bot → cccid.info
+> - #ContextSwap: D-038 @MAIT:#<SME> format
 >
 > ### Related Entries
-> - GTM_2026-W05_262: Previous CCC update
-> - GTM_2026-W05_269: Review findings
+> - GTM_2026-W05_777: @JRW onboarding #masterCCC
+> - GTM_2026-W05_789: BP-050 locked
 ```
 
 ---
@@ -534,7 +534,7 @@ We 23:45 PST    → Wednesday at 11:45 PM Pacific Standard Time
 ### CCC-ID Format
 ```
 <CCC>_<YYYY>-W<WW>_<NNN>
-Example: GTM_2026-W05_270
+Example: GTM_2026-W05_796
 ```
 
 ### Founding OG CCCs
@@ -569,7 +569,7 @@ Example: GTM_2026-W05_270
 1. Identify your CCC (e.g., `GTM`, `THY`, `IAL`)
 2. Note current ISO week (e.g., `2026-W05`)
 3. Get next sequential number for your CCC this week
-4. Assemble: `GTM_2026-W05_270`
+4. Assemble: `GTM_2026-W05_796`
 
 ### Step 2: Select Metadata
 
@@ -610,11 +610,12 @@ Example:
 
 ## 📜 Version History
 
-| Version | Date | Ref | Changes |
-|---------|------|-----|---------|
-| 2.4.2 | 2026-W05 | GTM_2026-W05_270 | +CCC-ID Rules section; +Agent Identity Format section; +Contributors (LDC, SHD); TOC → 15 items; fixes applied |
-| 2.4.1 | 2026-W05 | GTM_2026-W05_262 | #ContextSwap: ILO → IAL; roles aligned with SharedKernel_v2.4.7 |
-| 2.4.0 | 2026-W02 | GTM_2026-W02_017 | Initial public release; Governance & AMA process; ccc.bot domain; ♾️ WeOwnNet 🌐 branding |
+| Version | Date | #masterCCC | Approval | Changes |
+|---------|------|------------|----------|---------|
+| 2.4.3 | 2026-W05 | GTM_2026-W05_793 | GTM_2026-W05_795 | +JRW (Webb) — xCRO; #ContextSwap: ccc.bot → cccid.info; #ContextSwap: D-038 @MAIT:#<SME> format |
+| 2.4.2 | 2026-W05 | GTM_2026-W05_270 | — | +CCC-ID Rules section; +Agent Identity Format section; +Contributors (LDC, SHD); TOC → 15 items; fixes applied |
+| 2.4.1 | 2026-W05 | GTM_2026-W05_262 | — | #ContextSwap: ILO → IAL; roles aligned with SharedKernel_v2.4.7 |
+| 2.4.0 | 2026-W02 | GTM_2026-W02_017 | — | Initial public release; Governance & AMA process; ccc.bot domain; ♾️ WeOwnNet 🌐 branding |
 
 ---
 
@@ -647,7 +648,7 @@ Example:
 | Resource | URL |
 |----------|-----|
 | **♾️ WeOwnNet 🌐** | [weown.net](https://weown.net) |
-| **CCC Cooperative** | [ccc.bot](https://ccc.bot) *(coming soon)* |
+| **CCC Cooperative** | [cccid.info](https://cccid.info) *(coming soon)* |
 | **AI Instance** | [AI.WeOwn.Agency](https://AI.WeOwn.Agency) |
 | **GitHub Org** | [github.com/WeOwnNet](https://github.com/WeOwnNet) |
 | **CCC Repository** | [github.com/WeOwnNet/CCC](https://github.com/WeOwnNet/CCC) |
@@ -660,10 +661,8 @@ Example:
 **Document ID:** `CCC_CONTRIBUTOR-CODE-CONVENTION.md`  
 **Maintained By:** Core TEAM  
 **Repository:** [github.com/WeOwnNet/CCC](https://github.com/WeOwnNet/CCC)  
-**Cooperative:** [ccc.bot](https://ccc.bot)
+**Cooperative:** [cccid.info](https://cccid.info)
 
 ---
 
 *♾️ WeOwnNet 🌐 | 🏡 Real Estate and 🤝 cooperative ownership for everyone. An 🤗 inclusive community, by 👥 invitation only.*
-
----
